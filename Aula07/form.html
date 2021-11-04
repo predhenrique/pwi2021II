@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>TAG "input"</h2>
+
+        <p>TAG usada para inserir manualmente um texto no formulário</p>
+
+        <form action="">
+            <labe for="fname">Primeiro Nome:</labe><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit" value="Enviar">
+        
+        </form>
+        <br>
+        <br>
+
+        <h2>TAG de seleção</h2>
+        <p>Uma lista de elementos para selecionar</p>
+
+        <form action="">
+            <label for="cursos">Selecione um curso:</label>
+            <select id="cursos" name="Cursos">
+                <option value="administracao">Administração</option>
+                <option value="desenvovimentosistemas">Desenvolvimento de Sistemas</option>
+                <option value="contabilidade">Contabilidade</option>
+                <option value="sistemasdeinformacao">Sistemas de Informação</option>
+                <option value="edificacoes">Edificações</option>
+            </select>
+            <input type="submit">
+        </form>
+        <br>
+        <br>
+
+        <h2>TAG de seleção com valor visivel</h2>
+
+        <p>TAG usada para mostrar a quantidade visivel em uma lista de seleção</p>
+
+        <form action="">
+            <label for="animals">Escolha um animal:</label>
+            <select id="animals" name="animals" size="3">
+                <option value="dog">Cachorro</option>
+                <option value="cat">Gato</option>
+                <option value="bird">Pássaro</option>
+            </select>
+            <br><br>    
+        </form>
+
+        <h2>TAG Multiplas seleções</h2>
+
+        <p>Use a TAG atributo multiplo para permitir que o usuário selecione mais de um valor</p>
+        <p>Mantenha o CTRL para selecionar várias opções</p>
+        <form action="">
+            <label for="cars">Escolha um modelo de carro:</label>
+            <select id="cars" name="cars" size="4" multiple>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="audi">Audi</option>
+                <br><br>
+            </select>
+            <input type="submit">
+        </form>
+        <br><br>
+
+        <h2>TAG "textarea"</h2>
+        <p>TAG que define um campo de entrada de várias linhas</p>
+        <form action>
+        <textarea name="message" rows="10" cols="10">Digite qualquer coisa</textarea>
+        <br><br>
+        <input type="submit">
+        </form>
+
+        <br><br>
+
+        <h2>TAG "button"</h2>
+        <p>TAG usada para colocar um botão de alerta na página</p>
+        <button type="button" onclick="alert('Seja bem-vindo')">Clique aqui!</button>
+
+        <br><br>
+
+        <h2>Juntando dados do formulário com Fieldset</h2>
+        <p>A TAG Fieldset é usada para agrupar dados relacionados em um formulário, e o elemento legend
+            define uma legenda para o elemento fielset
+        </p>
+        <form action="">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="fname">Usuário:</label><br>
+                <input type="text" id="fname" name="fname" value="Usuário"><br>
+                <label for="lname">Senha:</label><br>
+                <input type="text" id="lname" name="lname" value="Senha"><br><br>
+                <input type="submit" value="submit">
+            </fieldset>
+        </form>
+
+        <br><br>
+        <h2>TAG datalist</h2>
+        <p>O elemento datalist especifica uma lista de opções predefinidas para um elemento de entrada</p>
+
+        <form action="">
+            <input list="browsers" name="browsers">
+            <datalist id="navegadores">
+                <option value="Internet Explorer"></option>
+                <option value="Edge"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+            </datalist>
+            <input type="submit">
+        </form>
+    </body>
+</html>
