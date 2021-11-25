@@ -42,8 +42,8 @@ body {
 
 .tail {
     position: absolute;
-    top: 430px;
-    left: 250px;
+    top: 40px;
+    left: 190px;
     transform-origin: left center;
     border-top: 10px solid transparent;
     border-bottom: 80px solid transparent;
@@ -54,8 +54,8 @@ body {
 
 .main {
     position: absolute;
-    left: 180px;
-    top: 395px;
+    left: 130px;
+    top: -10px;
     width: 40px;
     height: 20px;
     background: #302e37;
@@ -66,8 +66,8 @@ body {
     height: 700px;
     border-radius: 350px;
     position: absolute;
-    top: 40px;
-    left: -100px;
+    top: -360px;
+    left: -200px;
     z-index: 2;
     overflow: hidden;
     background-color: #a299ab;
@@ -79,8 +79,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -400px;
-    margin-top: 10px;
+    margin-left: -350px;
+    margin-top: -30px;
     width: 700px;
     height: 80px;
     background-color: #fff;
@@ -93,3 +93,35 @@ body {
 .rotor div:nth-child(2) {
     transform: rotate(90deg);
 }
+
+@keyframes bounce {
+    0%,100% {
+        transform: translate(0px, -50px) rotate(-15deg);
+    }
+    50% {
+        transform: translate(0px, 50px) rotate(-10deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.helicopter {
+    animation: bounce 5s infinite;
+}
+
+.rotator {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 350px;
+    animation: rotate 0.6s linear infinite;
+}
+
