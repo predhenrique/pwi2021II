@@ -1,0 +1,95 @@
+body {
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cockpit {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    width: 195px;
+    height: 195px;
+    border-radius: 100px 40px 50px 50px;
+    background-color: #44d2fd;
+}
+
+.cockpit::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: -25px;
+    width: 170px;
+    height: 170px;
+    border-radius: 40px;
+    background-color: #302e37;
+}
+
+.cockpit::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: -60px;
+    width: 170px;
+    height: 170px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0,05);
+}
+
+.tail {
+    position: absolute;
+    top: 430px;
+    left: 250px;
+    transform-origin: left center;
+    border-top: 10px solid transparent;
+    border-bottom: 80px solid transparent;
+    border-left: 350px solid #2fadd2;
+    border-bottom-right-radius: 10px;
+    height: 10px;
+}
+
+.main {
+    position: absolute;
+    left: 180px;
+    top: 395px;
+    width: 40px;
+    height: 20px;
+    background: #302e37;
+}
+
+.rotor {
+    width: 700px;
+    height: 700px;
+    border-radius: 350px;
+    position: absolute;
+    top: 40px;
+    left: -100px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #a299ab;
+    opacity: 0.12;
+    transform: scaleY(0.075);
+}
+
+.rotator div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: 10px;
+    width: 700px;
+    height: 80px;
+    background-color: #fff;
+}
+
+.rotator div:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.rotor div:nth-child(2) {
+    transform: rotate(90deg);
+}
